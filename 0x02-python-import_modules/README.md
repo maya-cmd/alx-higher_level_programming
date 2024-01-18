@@ -1,6 +1,7 @@
-This is adirectory for modules and imports. It comprises of tasks such as:
+This is a directory for modules and imports. It comprises of tasks such as:
 
 Tasks
+
 0. Import a simple function from a simple file
 mandatory
 Write a program that imports the function def add(a, b): from the file add_0.py and prints the result of the addition 1 + 2 = 3
@@ -15,6 +16,7 @@ Your program should print: <a value> + <b value> = <add(a, b) value> followed wi
 You can only use the word add_0 once in your code
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported - by using __import__, like the example below
+
 
 1. My first toolbox!
 mandatory
@@ -31,6 +33,7 @@ the word calculator_1 should be used only once in your file
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
 
+
 2. How to make a script dynamic!
 mandatory
 Write a program that prints the number of and the list of its arguments.
@@ -45,6 +48,7 @@ Your code should not be executed when imported
 The number of elements of argv can be retrieved by using: len(argv)
 You do not have to fully understand lists yet, but imagine that argv can be used just like a C array: you can use an index to walk through it. There are other ways (which will be preferred for future project tasks), if you know them you can use them.
 
+
 3. Infinite addition
 mandatory
 Write a program that prints the result of the addition of all arguments
@@ -52,6 +56,7 @@ Write a program that prints the result of the addition of all arguments
 The output should be the result of the addition of all arguments, followed by a new line
 You can cast arguments into integers by using int() (you can assume that all arguments can be casted into integers)
 Your code should not be executed when imported
+
 
 4. Who are you?
 mandatory
@@ -62,12 +67,14 @@ You should print only names that do not start with __
 Your code should not be executed when imported
 Make sure you are running your code in Python3.8.x (hidden_4.pyc has been compiled with this version)
 
+
 5. Everything can be imported
 mandatory
 Write a program that imports the variable a from the file variable_load_5.py and prints its value.
 
 You are not allowed to use * for importing or __import__
 Your code should not be executed when imported
+
 
 6. Build my own calculator!
 #advanced
@@ -96,3 +103,4 @@ Your program should be maximum 2 lines long
 You are not allowed to use print or eval or open or import sys in your file 101-easy_print.py
 
 Write the Python function def magic_calculation(a, b): that does exactly the same as the following Python bytecode:
+
