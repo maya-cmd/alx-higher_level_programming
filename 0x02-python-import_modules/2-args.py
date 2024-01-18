@@ -6,11 +6,11 @@ if __name__ == "__main__":
     number_args = len(argv) - 1
 
     if number_args == 0:
-        print("Number of arguments is 0.")
+        print("0 arguments.")
     elif number_args == 1:
-        print("Number of arguments is 1:")
+        print("1 arguments:")
     else:
-        print(f"{number_args} arguments are present:")
+        print(f"{number_args} arguments:")
 
     for i in range(number_args):
         print(f"{i + 1}: {argv[i + 1]}")
