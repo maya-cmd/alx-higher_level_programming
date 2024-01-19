@@ -1,13 +1,13 @@
 #!/usr/bin/python3
 
-if __name__ == "__main__i":
+if __name__ == "__main__":
 
     import sys
 
     arguments = sys.argv[1:]
 
-    int_args = [int(arg) for arg in arguments]
+    int_arguments = [int(arg) for arg in arguments]
 
-    result = sum(int_args)
+    result = sum(int_arguments)
 
     print(result)
