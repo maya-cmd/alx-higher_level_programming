@@ -14,6 +14,8 @@ if __name__ == "__main__":
 
     a = int(argv[argc - 2])
     b = int(argv[argc])
+    operator = argv[argc - 1]
+    result = 0
 
     if operator == '+':
         result = add(a, b)
