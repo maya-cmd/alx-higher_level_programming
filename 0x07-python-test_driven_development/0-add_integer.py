@@ -11,7 +11,7 @@ def add_integer(a, b=98):
     Function that adds two integers together.
     Args:
         a: first int
-        b: second int, which is 98 by default 
+        b: second int, which is 98 by default
     Returns: sum of a and b
     """
     if type(a) not in (int, float):
