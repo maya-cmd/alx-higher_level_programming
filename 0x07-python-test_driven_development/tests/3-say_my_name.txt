@@ -1,0 +1,54 @@
+3-say_my_name module
+============================
+The function defines a string that prints first and second name “say_my_name(first_name, last_name”””
+
+Using the 3-say_my_name function
+----------------------------------------------
+
+Import module:
+	>>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Testing for required output:
+	>>> say_my_name("Andrew", "Smith ")
+	My name is Andrew Smith
+
+Testing for firstname:
+	>>> say_my_name("Andrew")
+	My name is Andrew 
+
+Testing for lasttname:
+	>>> say_my_name ("Smith")
+	My name is Smith
+
+Testing for when firstname is empty:
+	>>> say_my_name("", "Smith")
+	My name is  Smith
+
+Testing for when lastname is empty:
+	>>> say_my_name("Andrew", "")
+	My name is Andrew
+
+Testing for non_string frst argument:
+	>>> say_my_name(2, "Smith")
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+Testing for non_string second argument:
+	>>> say_my_name("Andrew", 2)
+	Traceback (most recent call last):
+	TypeError: last_name must be a string
+
+Testing for when both arguments are non_strings:
+	>>> say_my_name(2, 3)
+	Traceback (most recent call last):
+	TypeError: first_name must be a string
+
+
+Testing for when both names are not there:
+	>>> say_my_name("", "")
+	My name is  
+
+Testing for empty spaces:
+	>>> say_my_name("   ", "   ")
+	My name is   
+
