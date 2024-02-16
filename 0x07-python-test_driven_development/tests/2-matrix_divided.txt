@@ -1,0 +1,56 @@
+2-matrix_divided module
+============================
+
+The module defines a function that divides a matrix “matrix_divided(matrix, div)”
+
+Using usage of the matrix_divided function
+---------------------------------------------------------
+
+Import module:
+    >>> matrix_divided = __import__('2-matrix_divided').matrix_divided
+
+Testing for unchanged matrix:
+    >>> mat = [[1, 3, 5], [2, 4, 6]]
+    >>> matrix_divided(mat, 2)
+    [[0.5, 1.5, 2.5], [1.0, 2.0, 3.0]]
+    >>> mat[1][1]
+    4
+
+Testing for empty list:
+    >>> matrix_divided([[]], 8)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
+
+Testing for integers and float numbers:
+    >>> matrix_divided([[1, 3, 5], [2, "school", 6]], 2)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
+
+Test matrix with different rows:
+    >>> matrix_divided([[1, 3, 5], [2, 4]], 2)
+    Traceback (most recent call last):
+    TypeError: Each row of the matrix must have the same size
+
+Testing for a matrix that s empty:
+    >>> matrix_divided([[], [], []], 8)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
+
+Testing for division by a non_zero value:
+    >>> matrix_divided([[1, 3, 5], [2, 4, 6]], 0)
+    Traceback (most recent call last):
+    ZeroDivisionError: division by zero
+
+Testing for division by non_integers and non_floats:
+    >>> matrix_divided([[1]], "school")
+    Traceback (most recent call last):
+    TypeError: div must be a number
+
+Testing with division by inf(infinity):
+    >>> matrix_divided([[1, 3, 5], [2, 4, 6]], float('inf'))
+    [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
+
+Testing using  division by nan:
+    >>> matrix_divided([[1, 3, 5],  [2, 4, 6]], float('nan'))
+    [[nan, nan, nan], [nan, nan, nan]]
+
