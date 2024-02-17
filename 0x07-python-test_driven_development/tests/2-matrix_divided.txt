@@ -50,6 +50,11 @@ Testing with division by inf(infinity):
     >>> matrix_divided([[1, 3, 5], [2, 4, 6]], float('inf'))
     [[0.0, 0.0, 0.0], [0.0, 0.0, 0.0]]
 
+Testing for first argument string:
+    >>> matrix_divided("school", 1)
+    Traceback (most recent call last):
+    TypeError: matrix must be a matrix (list of lists)of integers/floats
+
 Testing using  division by nan:
     >>> matrix_divided([[1, 3, 5],  [2, 4, 6]], float('nan'))
     [[nan, nan, nan], [nan, nan, nan]]

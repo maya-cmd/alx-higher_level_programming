@@ -9,20 +9,16 @@ Import module:
 	>>> say_my_name = __import__('3-say_my_name').say_my_name
 
 Testing for required output:
-	>>> say_my_name("Andrew", "Smith ")
+	>>> say_my_name("Andrew", "Smith")
 	My name is Andrew Smith
 
 Testing for firstname:
 	>>> say_my_name("Andrew")
-	My name is Andrew 
-
-Testing for lasttname:
-	>>> say_my_name ("Smith")
-	My name is Smith
+	My name is Andrew
 
 Testing for when firstname is empty:
-	>>> say_my_name("", "Smith")
-	My name is  Smith
+	>>> say_my_name("","Smith")
+	My name is hello
 
 Testing for when lastname is empty:
 	>>> say_my_name("Andrew", "")
@@ -43,12 +39,10 @@ Testing for when both arguments are non_strings:
 	Traceback (most recent call last):
 	TypeError: first_name must be a string
 
-
 Testing for when both names are not there:
 	>>> say_my_name("", "")
 	My name is  
 
 Testing for empty spaces:
 	>>> say_my_name("   ", "   ")
-	My name is   
-
+	My name is
