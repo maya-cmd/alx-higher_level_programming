@@ -27,7 +27,7 @@ class Square(Rectangle):
         self.width = value
         self.height = value
 
-      def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """Method updates the Square.
 
         Args:
@@ -67,7 +67,6 @@ class Square(Rectangle):
                     self.x = v
                 elif k == "y":
                     self.y = v
-    
 
     def __str__(self):
         """Return the representation of a Square's print() and str()."""
