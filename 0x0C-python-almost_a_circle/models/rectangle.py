@@ -83,7 +83,7 @@ class Rectangle(Base):
     def area(self):
         """Return the Rectangle's area."""
         return self.width * self.height
-    
+
     def display(self):
         """Method uses `#` character to print the Rectangle."""
         if self.width == 0 or self.height == 0:
@@ -96,7 +96,7 @@ class Rectangle(Base):
             [print("#", end="") for w in range(self.width)]
             print("")
 
-     def update(self, *args, **kwargs):
+    def update(self, *args, **kwargs):
         """Update the Rectangle.
 
         Args:
@@ -142,3 +142,8 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
+    def __str__(self):
+        """Return the representation of the Rectangle's print() and str()."""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id,
+                                                       self.x, self.y,
+                                                       self.width, self.height)
