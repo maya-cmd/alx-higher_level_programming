@@ -423,7 +423,7 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
             Rectangle(1, 2, "invalid x", "invalid y")
 
 
-    class TestRectangle_area(unittest.TestCase):
+class TestRectangle_area(unittest.TestCase):
     """Unittests for testing the area method of the Rectangle class."""
 
     def test_area_small(self):
@@ -478,7 +478,7 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
         with self.assertRaises(TypeError):
             r.display(1)
     
-    class TestRectangle_stdout(unittest.TestCase):
+class TestRectangle_stdout(unittest.TestCase):
     """Unittests for testing __str__ and display methods of Rectangle class."""
 
     @staticmethod
@@ -532,9 +532,9 @@ class TestRectangle_order_of_initialization(unittest.TestCase):
     def test_str_method_one_arg(self):
         r = Rectangle(1, 2, 3, 4, 5)
         with self.assertRaises(TypeError):
-            r.__str__(1
+            r.__str__(1)
     
-    class TestRectangle_update_args(unittest.TestCase):
+class TestRectangle_update_args(unittest.TestCase):
     """Unittests for testing update args method of the Rectangle class."""
 
     # Test args
@@ -783,7 +783,7 @@ class TestRectangle_update_kwargs(unittest.TestCase):
         r.update(height=5, id=89, a=1, b=54, x=19, y=7)
         self.assertEqual("[Rectangle] (89) 19/7 - 10/5", str(r))
 
-    class TestRectangle_to_dictionary(unittest.TestCase):
+class TestRectangle_to_dictionary(unittest.TestCase):
     """Unittests for testing to_dictionary method of the Rectangle class."""
 
     def test_to_dictionary_output(self):
