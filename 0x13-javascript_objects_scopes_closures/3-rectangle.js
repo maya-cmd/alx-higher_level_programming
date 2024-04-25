@@ -1,7 +1,7 @@
 #!/usr/bin/node
 /**
  * Initializes parameters with values
- * Creates an instancee method 
+ * Creates an instancee method
  */
 class Rectangle {
   constructor (w, h) {
