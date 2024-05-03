@@ -14,7 +14,7 @@ def main():
     # First connect to the database
     db_connect = MySQLdb.connect(
         host="localhost", user=argv[1], port=3306, passwd=argv[2], db=argv[3])
-    #Create a cursor object to aid in execution
+    # Create a cursor object to aid in execution
     db_cursor = db_connect.cursor()
     # Using the cursor execute query
     db_cursor.execute("SELECT * FROM states")
