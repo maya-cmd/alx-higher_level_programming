@@ -1,4 +1,3 @@
 #!/bin/bash
-# URL, sends a request to that URL, and
-# It also,displays the size of the body of the response
+# Get the comtent-lenght of an ip address
 curl -sI "$1" | awk '/Content-Length/{print $2}'
